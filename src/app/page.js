@@ -12,8 +12,11 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Quote Generator</h1>
-      <QuoteGenerator />
+
+      <main className="flex flex-col items-center justify-center w-full">
+        <h1 className="text-4xl font-bold mb-8 underline">Quote Generator</h1>
+        <QuoteGenerator />
+      </main>
     </div>
   );
 }

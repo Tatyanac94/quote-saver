@@ -48,28 +48,28 @@ export default function QuoteGenerator() {
   return (
     <div className="max-w-md p-4 mx-auto space-y-4 bg-white shadow-md rounded-xl">
       <div>
-        <p className="text-xl font-semibold text-cyan-700">{quote}</p>
-        <p className="text-right text-cyan-500">{author}</p>
+        <p className="text-xl font-semibold text-violet-700">{quote}</p>
+        <p className="text-right text-violet-500">{author}</p>
       </div>
       <div className="flex space-x-4">
         <button
           onClick={fetchQuote}
-          className="px-4 py-2 text-white rounded-lg bg-cyan-500 hover:bg-cyan-700"
+          className="px-4 py-2 text-white rounded-lg bg-violet-500 hover:bg-violet-700"
         >
           Generate Quote
         </button>
         <button
           onClick={saveQuote}
-          className="px-4 py-2 text-white rounded-lg bg-cyan-500 hover:bg-cyan-700"
+          className="px-4 py-2 text-white rounded-lg bg-violet-500 hover:bg-violet-700"
         >
           Save Quote
         </button>
       </div>
       <div>
-        <h2 className="text-lg font-bold text-cyan-700">Saved Quotes</h2>
+        <h2 className="text-lg font-bold text-violet-700">Saved Quotes</h2>
         <ul className="list-disc list-inside">
           {savedQuotes.map((q, index) => (
-            <li key={index} className="text-cyan-600">
+            <li key={index} className="text-violet-600">
               &quot{q.text}&quot - {q.author}
             </li>
           ))}
