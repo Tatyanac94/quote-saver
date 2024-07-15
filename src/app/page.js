@@ -1,5 +1,5 @@
 import Head from "next/head";
-import QuoteGenerator from "@/components/quoteGenerator";
+import QuoteGenerator from "../components/quoteGenerator.jsx";
 
 export default function Home() {
   return (
